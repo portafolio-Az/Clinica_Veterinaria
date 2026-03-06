@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VetCare Center | Clínica Veterinaria Especializada</title>
+    <meta name="description" content="Clínica veterinaria especializada en el cuidado integral de tus mascotas. Servicios de emergencia, cirugía, vacunación y más.">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐾</text></svg>">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar">
+                <a href="#" class="logo">
+                    <span class="logo-icon">🐾</span>
+                    <span class="logo-text">Vet<span class="logo-highlight">Care</span>Center</span>
+                </a>
+                
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation menu">
+                    <span class="hamburger"></span>
+                </button>
+                
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="#inicio" class="nav-link active">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
+                    <li><a href="#equipo" class="nav-link">Equipo</a></li>
+                    <li><a href="#testimonios" class="nav-link">Testimonios</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li><a href="tel:+1234567890" class="btn btn-primary">Urgencias: (123) 456-7890</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section with Improved Slider -->
+    <section class="hero" id="inicio">
+        <div class="hero-slider" id="heroSlider">
+            <!-- Slide 1 -->
+            <div class="slide active">
+                <div class="slide-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962620229-614e281fe009?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Veterinario examinando perro" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Cuidado Integral para Tus <span class="highlight">Mascotas</span></h1>
+                        <p class="slide-description">En VetCare Center ofrecemos atención veterinaria especializada con el máximo amor y dedicación. Tu mascota en las mejores manos.</p>
+                        <div class="slide-buttons">
+                            <a href="#contacto" class="btn btn-primary">Pedir Cita</a>
+                            <a href="#servicios" class="btn btn-secondary">Nuestros Servicios</a>
+                        </div>
+                        <div class="hero-features">
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <span>24/7 Emergencias</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-user-md"></i>
+                                <span>Especialistas Certificados</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-home"></i>
+                                <span>Atención a Domicilio</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://plus.unsplash.com/premium_photo-1661962785160-458b1a95750b?q=80&w=1169&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Veterinaria con gato" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Medicina Preventiva y <span class="highlight">Vacunación</span></h1>
+                        <p class="slide-description">Programas de vacunación completos y chequeos regulares para garantizar la salud y bienestar de tu compañero peludo.</p>
+                        <div class="slide-buttons">
+                            <a href="#servicios" class="btn btn-primary">Ver Servicios</a>
+                            <a href="tel:+1234567890" class="btn btn-secondary">Llamar Ahora</a>
+                        </div>
+                        <div class="hero-features">
+                            <div class="feature">
+                                <i class="fas fa-syringe"></i>
+                                <span>Vacunación Completa</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-stethoscope"></i>
+                                <span>Chequeos Anuales</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heartbeat"></i>
+                                <span>Control de Parásitos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide">
+                <div class="slide-image">
+                    <img src="https://images.unsplash.com/photo-1579168765467-3b235f938439?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80" alt="Cachorro siendo examinado" loading="lazy">
+                </div>
+                <div class="slide-overlay"></div>
+                <div class="container">
+                    <div class="slide-content">
+                        <h1 class="slide-title">Cirugía Veterinaria <span class="highlight">Especializada</span></h1>
+                        <p class="slide-description">Contamos con quirófanos equipados con tecnología de última generación y un equipo de cirujanos altamente cualificados.</p>
+                        <div class="slide-buttons">
+                            <a href="#equipo" class="btn btn-primary">Conoce a Nuestro Equipo</a>
+                            <a href="#contacto" class="btn btn-secondary">Solicitar Consulta</a>
+                        </div>
+                        <div class="hero-features">
+                            <div class="feature">
+                                <i class="fas fa-procedures"></i>
+                                <span>Cirugía Avanzada</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-hospital"></i>
+                                <span>Hospitalización</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-ambulance"></i>
+                                <span>Ambulancia Veterinaria</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slider Controls -->
+            <button class="slider-control prev" id="prevSlide" aria-label="Previous slide">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="slider-control next" id="nextSlide" aria-label="Next slide">
+                <i class="fas fa-chevron-right"></i>
+            </button>
+            
+            <!-- Slider Progress Bar -->
+            <div class="slider-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <!-- Slider Dots -->
+            <div class="slider-dots">
+                <span class="dot active" data-slide="0"></span>
+                <span class="dot" data-slide="1"></span>
+                <span class="dot" data-slide="2"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="servicios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestros <span class="highlight">Servicios</span></h2>
+                <p class="section-subtitle">Ofrecemos una amplia gama de servicios veterinarios para el cuidado integral de tu mascota</p>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-stethoscope"></i>
+                    </div>
+                    <h3>Consultas Generales</h3>
+                    <p>Exámenes de salud completos, diagnóstico y tratamiento de enfermedades comunes.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Chequeo completo</li>
+                        <li><i class="fas fa-paw"></i> Diagnóstico avanzado</li>
+                        <li><i class="fas fa-paw"></i> Seguimiento personalizado</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-syringe"></i>
+                    </div>
+                    <h3>Vacunación</h3>
+                    <p>Programas de vacunación personalizados para perros, gatos y otras mascotas.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Vacunas esenciales</li>
+                        <li><i class="fas fa-paw"></i> Refuerzos anuales</li>
+                        <li><i class="fas fa-paw"></i> Pasaporte veterinario</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-procedures"></i>
+                    </div>
+                    <h3>Cirugía Veterinaria</h3>
+                    <p>Intervenciones quirúrgicas con equipamiento de última generación y anestesia segura.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Esterilización</li>
+                        <li><i class="fas fa-paw"></i> Cirugía ortopédica</li>
+                        <li><i class="fas fa-paw"></i> Cirugía de tejidos blandos</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-tooth"></i>
+                    </div>
+                    <h3>Odontología</h3>
+                    <p>Cuidado dental completo: limpieza, extracciones y tratamiento de enfermedades periodontales.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Limpieza dental</li>
+                        <li><i class="fas fa-paw"></i> Extracciones</li>
+                        <li><i class="fas fa-paw"></i> Ortodoncia veterinaria</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Laboratorio Clínico</h3>
+                    <p>Análisis de sangre, orina, pruebas de alergia y diagnósticos por imagen (rayos X, ecografía).</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Análisis de sangre</li>
+                        <li><i class="fas fa-paw"></i> Ecografía</li>
+                        <li><i class="fas fa-paw"></i> Rayos X digital</li>
+                    </ul>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Atención a Domicilio</h3>
+                    <p>Servicio veterinario en casa para mascotas que necesitan atención en un ambiente familiar.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-paw"></i> Consultas en casa</li>
+                        <li><i class="fas fa-paw"></i> Vacunación domiciliaria</li>
+                        <li><i class="fas fa-paw"></i> Cuidados paliativos</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="nosotros">
+        <div class="container">
+            <div class="about-content">
+                <!-- El encabezado "Sobre VetCare Center" ha sido eliminado según lo solicitado -->
+                <p>Fundada en 2008, <strong>VetCare Center</strong> se ha consolidado como una de las clínicas veterinarias más confiables y avanzadas de la región. Nuestra misión es proporcionar atención médica de alta calidad con un enfoque compasivo y personalizado.</p>
+                
+                <p>Contamos con instalaciones modernas equipadas con tecnología de última generación, incluyendo quirófanos esterilizados, área de hospitalización, laboratorio clínico propio y unidades de diagnóstico por imagen.</p>
+                
+                <div class="about-stats">
+                    <div class="stat">
+                        <div class="stat-number" data-count="15000">0</div>
+                        <div class="stat-label">Mascotas Atendidas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="15">0</div>
+                        <div class="stat-label">Años de Experiencia</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="12">0</div>
+                        <div class="stat-label">Especialistas</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number" data-count="24">0</div>
+                        <div class="stat-label">Horas Urgencias</div>
+                    </div>
+                </div>
+                
+                <a href="#contacto" class="btn btn-primary">Conoce Nuestra Clínica</a>
+            </div>
+            
+            <div class="about-image">
+                <div class="image-frame">
+                    <img src="https://images.unsplash.com/photo-1513360371669-4adf3dd7dff8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Interior de la clínica veterinaria" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section" id="equipo">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nuestro <span class="highlight">Equipo</span></h2>
+                <p class="section-subtitle">Profesionales altamente cualificados y apasionados por el bienestar animal</p>
+            </div>
+            
+            <div class="team-slider" id="teamSlider">
+                <div class="team-member active">
+                    <div class="member-image">
+                        <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Dra. María González" loading="lazy">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Dra. María González</h3>
+                        <p class="member-role">Veterinaria Jefe - Especialista en Cirugía</p>
+                        <p>Más de 12 años de experiencia en cirugía veterinaria. Certificada por el Colegio Europeo de Cirugía Veterinaria.</p>
+                        <div class="member-specialties">
+                            <span class="specialty">Cirugía</span>
+                            <span class="specialty">Ortopedia</span>
+                            <span class="specialty">Traumatología</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1658506671316-0b293df7c72b?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dr. Carlos Rodríguez" loading="lazy">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Dr. Carlos Rodríguez</h3>
+                        <p class="member-role">Veterinario - Especialista en Medicina Interna</p>
+                        <p>Experto en diagnóstico y tratamiento de enfermedades complejas. Máster en Medicina Interna Veterinaria.</p>
+                        <div class="member-specialties">
+                            <span class="specialty">Medicina Interna</span>
+                            <span class="specialty">Cardiología</span>
+                            <span class="specialty">Neurología</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-image">
+                        <img src="https://plus.unsplash.com/premium_photo-1661580574627-9211124e5c3f?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Dra. Laura Martínez" loading="lazy">
+                        <div class="member-social">
+                            <a href="#"><i class="fab fa-linkedin"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                    <div class="member-info">
+                        <h3>Dra. Laura Martínez</h3>
+                        <p class="member-role">Veterinaria - Especialista en Dermatología</p>
+                        <p>Especializada en enfermedades de la piel y alergias en mascotas. Formada en el Hospital Veterinario de Barcelona.</p>
+                        <div class="member-specialties">
+                            <span class="specialty">Dermatología</span>
+                            <span class="specialty">Alergología</span>
+                            <span class="specialty">Otología</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Slider Controls -->
+                <button class="team-control prev" id="prevTeam">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="team-control next" id="nextTeam">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+                
+                <!-- Team Slider Dots -->
+                <div class="team-dots">
+                    <span class="team-dot active" data-team="0"></span>
+                    <span class="team-dot" data-team="1"></span>
+                    <span class="team-dot" data-team="2"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonios">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Testimonios de <span class="highlight">Clientes</span></h2>
+                <p class="section-subtitle">Lo que dicen los dueños de mascotas sobre nuestros servicios</p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-image">
+                            <img src="https://images.unsplash.com/photo-1494790108755-2616b786d4d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Ana López" loading="lazy">
+                        </div>
+                        <div class="client-info">
+                            <h4>Ana López</h4>
+                            <p class="client-pet">Dueña de Max (Labrador)</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"Cuando Max necesitó una cirugía de cadera, el equipo de VetCare Center fue increíble. No solo la operación fue un éxito, sino que el seguimiento postoperatorio fue excepcional. ¡Recomiendo totalmente esta clínica!"</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-image">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Carlos Méndez" loading="lazy">
+                        </div>
+                        <div class="client-info">
+                            <h4>Carlos Méndez</h4>
+                            <p class="client-pet">Dueño de Luna (Gato Siames)</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"Llevo a Luna aquí desde que era un gatito. El servicio de vacunación y chequeos anuales es excelente. Los veterinarios son muy atentos y explican todo con detalle. Mi gato se siente cómodo en cada visita."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-header">
+                        <div class="client-image">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&auto=format&fit=crop&w=200&q=80" alt="Sofía Ramírez" loading="lazy">
+                        </div>
+                        <div class="client-info">
+                            <h4>Sofía Ramírez</h4>
+                            <p class="client-pet">Dueña de Rocky (Bulldog Francés)</p>
+                        </div>
+                    </div>
+                    <div class="testimonial-body">
+                        <p>"Rocky tuvo una emergencia a medianoche y el servicio de urgencias 24/7 fue un salvavidas. El equipo actuó rápidamente y salvó la vida de mi perro. Estoy eternamente agradecida con VetCare Center."</p>
+                        <div class="testimonial-rating">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contacto">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contacta con <span class="highlight">Nosotros</span></h2>
+                <p class="section-subtitle">Estamos aquí para cuidar de tu mascota. Agenda una cita o visítanos</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Dirección</h3>
+                            <p>Calle Veterinaria 123, Colonia Animal<br>Ciudad Capital, CP 12345</p>
+                            <a href="#" class="map-link">Ver en Google Maps <i class="fas fa-external-link-alt"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Teléfonos</h3>
+                            <p><strong>Citas:</strong> <a href="tel:+1234567891">(123) 456-7891</a></p>
+                            <p><strong>Urgencias 24/7:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@vetcarecenter.com">info@vetcarecenter.com</a></p>
+                            <p><a href="mailto:emergencias@vetcarecenter.com">emergencias@vetcarecenter.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card">
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Horarios</h3>
+                            <p><strong>Lunes a Viernes:</strong> 9:00 AM - 8:00 PM</p>
+                            <p><strong>Sábados:</strong> 9:00 AM - 2:00 PM</p>
+                            <p><strong>Domingos:</strong> Solo urgencias</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <h3>Solicita una Cita</h3>
+                    <p>Completa el formulario y nos pondremos en contacto contigo para confirmar la fecha y hora.</p>
+                    
+                    <form id="appointmentForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" name="phone" placeholder="Tu teléfono" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="email" id="email" name="email" placeholder="Tu correo electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="pet" name="pet" placeholder="Nombre de tu mascota" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group">
+                                <select id="service" name="service" required>
+                                    <option value="" disabled selected>Selecciona un servicio</option>
+                                    <option value="consulta">Consulta General</option>
+                                    <option value="vacunacion">Vacunación</option>
+                                    <option value="cirugia">Cirugía</option>
+                                    <option value="odontologia">Odontología</option>
+                                    <option value="urgencia">Urgencia</option>
+                                    <option value="domicilio">Atención a Domicilio</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="date" id="date" name="date" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="4" placeholder="Mensaje adicional (síntomas, preferencias de horario, etc.)"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Solicitar Cita</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Emergency Banner -->
+    <div class="emergency-banner">
+        <div class="container">
+            <div class="emergency-content">
+                <div class="emergency-icon">
+                    <i class="fas fa-ambulance"></i>
+                </div>
+                <div class="emergency-text">
+                    <h3>¿Tu mascota necesita atención urgente?</h3>
+                    <p>Servicio de emergencias veterinarias 24 horas, los 7 días de la semana.</p>
+                </div>
+                <div class="emergency-action">
+                    <a href="tel:+1234567890" class="btn btn-emergency">
+                        <i class="fas fa-phone"></i> Llamar a Urgencias
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a href="#" class="logo">
+                        <span class="logo-icon">🐾</span>
+                        <span class="logo-text">Vet<span class="logo-highlight">Care</span>Center</span>
+                    </a>
+                    <p>Clínica veterinaria especializada en el cuidado integral de mascotas. Amor, ciencia y dedicación en cada consulta.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Servicios</h3>
+                    <ul>
+                        <li><a href="#servicios">Consultas Generales</a></li>
+                        <li><a href="#servicios">Vacunación</a></li>
+                        <li><a href="#servicios">Cirugía Veterinaria</a></li>
+                        <li><a href="#servicios">Odontología</a></li>
+                        <li><a href="#servicios">Laboratorio Clínico</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Enlaces Rápidos</h3>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#nosotros">Sobre Nosotros</a></li>
+                        <li><a href="#equipo">Nuestro Equipo</a></li>
+                        <li><a href="#testimonios">Testimonios</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2026. Web creada por Alejandro Azcorra con inteligencia artificial.</p>
+                <p><a href="#">Política de Privacidad</a> | <a href="#">Términos de Servicio</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>
